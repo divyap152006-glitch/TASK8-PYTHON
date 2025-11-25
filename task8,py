@@ -1,0 +1,31 @@
+# Simple Rule-Based Chatbot
+
+print("🤖 Chatbot: Hello! I am your simple chatbot. Type 'bye' to exit.\n")
+
+while True:
+    user_input = input("You: ").lower()
+
+    if user_input == "hi" or user_input == "hello":
+        print("Chatbot: Hello! How can I help you today?")
+
+    elif user_input == "how are you":
+        print("Chatbot: I'm always good! Thanks for asking 😊")
+
+    elif user_input == "what is your name":
+        print("Chatbot: I am a simple rule-based chatbot created in Python.")
+
+    elif user_input == "bye":
+        print("Chatbot: Goodbye! Have a nice day 👋")
+        break
+
+    elif "weather" in user_input:
+        print("Chatbot: I can't check weather, but it looks like a good day!")
+
+    elif "college" in user_input:
+        print("Chatbot: College life is fun! What do you want to know?")
+
+    elif "help" in user_input:
+        print("Chatbot: Sure! Tell me what help you need.")
+
+    else:
+        print("Chatbot: Sorry, I didn't understand that. Try asking something else!")
